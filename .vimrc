@@ -70,4 +70,8 @@ autocmd VimLeave * silent !echo -ne "\e[6 q"
 
 " Colorscheme
 "
-colorscheme koehler
+" colorscheme koehler
+
+" Tab for two spaces
+"
+set autoindent expandtab tabstop=2 shiftwidth=2
