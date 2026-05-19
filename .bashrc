@@ -102,6 +102,8 @@ alias bconf="vi ~/.bashrc"
 alias bup="source ~/.bashrc"
 alias vconf="vi ~/.vimrc"
 alias vup="source ~/.vimrc"
+alias tconf="vi ~/.tmux.conf"
+alias tup="tmux source-file ~/.tmux.conf"
 
 alias homeconf="vi ~/Docker/homepage/config/services.yaml"
 

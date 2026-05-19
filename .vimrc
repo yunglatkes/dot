@@ -68,10 +68,10 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 autocmd VimLeave * silent !echo -ne "\e[6 q"
 
-" Colorscheme
-"
-" colorscheme koehler
-
 " Tab for two spaces
 "
 set autoindent expandtab tabstop=2 shiftwidth=2
+
+" Colors
+"
+set termguicolors
