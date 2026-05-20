@@ -141,6 +141,11 @@ man() {
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
+# mkcd: make directory and cd into it
+mkcd() {
+    mkdir -p "$@" && cd "$1"
+}
+
 # Docker compose function
 _docker_cd() {
   if [ -z "$1" ]; then
