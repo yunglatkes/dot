@@ -107,6 +107,8 @@ alias tup="tmux source-file ~/.tmux.conf"
 
 alias homeconf="vi ~/Docker/homepage/config/services.yaml"
 
+alias dockup="~/Code/dockcheck.sh"
+
 alias lazydocker='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/Docker/lazydocker/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
 
 alias pyenv="source ~/Code/venv/bin/activate"
