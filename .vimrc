@@ -65,4 +65,4 @@ set autoindent expandtab tabstop=2 shiftwidth=2
 "
 set termguicolors
 "
-colorscheme elflord
+colorscheme torte 
