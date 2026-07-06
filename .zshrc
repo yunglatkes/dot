@@ -20,18 +20,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# ----- WSL stuff -----
-# Set directory variables
-setopt cdablevars
-win=/mnt/c/Users/ダウブ・ルカス/
-goo=/mnt/g/
-
-# Google drive access
-sudo mount -t drvfs G: /mnt/g
-export PATH="$HOME/.local/bin:$PATH"
-export MUSIC_DIR="$HOME/media"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
-
 # ----- Prompt -----
 # reference https://recursivefunction.blog/p/building-a-custom-zsh-prompt-from
 #
