@@ -33,7 +33,7 @@ alias tconf="vi ~/.tmux.conf"
 alias tup="tmux source-file ~/.tmux.conf"
 
 # dot files
-alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias dot="/usr/bin/git --git-dir=$HOME/.dot --work-tree=$HOME"
 
 # games
 alias sol="~/code/solVItaire/sol"
