@@ -1,5 +1,9 @@
 # ----- Keybinds -----
-source /usr/share/doc/fzf/example/key-bindings.zsh
+if [ -f /usr/share/doc/fzf/example/key-bindings.zsh ]; then
+    . /usr/share/doc/fzf/example/key-bindings.zsh
+elif [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]; then
+    . /usr/share/doc/fzf/examples/key-bindings.zsh
+fi
 
 # ----- Custom aliases -----
 source ~/.alias
@@ -46,7 +50,7 @@ precmd() {
     vcs_info
 }
 
-PROMPT='%F{magenta}%B%~%b%f ${vcs_info_msg_0_}%B%(!.#.$)%b '
+PROMPT='%F{magenta}%B%~%b%f ${vcs_info_msg_0_}%B%(!.#.❯)%b '
 
 # ----- History -----
 setopt append_history inc_append_history share_history # better history
