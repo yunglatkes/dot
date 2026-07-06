@@ -159,4 +159,8 @@ complete -F _docker_complete dcu dcd dcl
 export PATH=$PATH:/home/$USER/.local/bin
 
 # Custom source
-source /usr/share/fzf/key-bindings.bash
+if [ -f /usr/share/fzf/key-bindings.bash ]; then
+    . /usr/share/fzf/key-bindings.bash
+elif [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
+    . /usr/share/doc/fzf/examples/key-bindings.bash
+fi

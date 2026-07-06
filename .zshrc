@@ -1,3 +1,6 @@
+# ----- Keybinds -----
+source /usr/share/doc/fzf/example/key-bindings.zsh
+
 # ----- Custom aliases -----
 source ~/.alias
 
