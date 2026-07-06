@@ -99,36 +99,6 @@ fi
 # apt (Debian) alias
 alias update="sudo apt update && sudo apt upgrade -y"
 
-# pacman (Arch) alias
-alias pet="sudo pacman -S"
-alias pup="sudo pacman -Syu"
-alias nconf="vi ~/.config/niri/config.kdl"
-
-# bash alias
-alias bconf="vi ~/.bashrc"
-alias bup="source ~/.bashrc"
-
-# vim alias
-alias vconf="vi ~/.vimrc"
-alias vup="source ~/.vimrc"
-
-# tmux alias
-alias tconf="vi ~/.tmux.conf"
-alias tup="tmux source-file ~/.tmux.conf"
-
-# w3m alias
-alias ddg="w3m duckduckgo.com"
-
-# server alias
-alias hconf="vi ~/Docker/homepage/config/services.yaml"
-alias dockup="~/Code/dockcheck.sh"
-alias lazydocker='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/Docker/lazydocker/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
-
-# python alias
-alias pyenv="source ~/Code/venv/bin/activate"
-
-# dotfiles "git" replacement
-alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

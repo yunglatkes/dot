@@ -1,38 +1,5 @@
 # ----- Custom aliases -----
-# Debian update
-alias update="sudo apt update && sudo apt upgrade -y"
-
-# zsh
-alias zconf="vi ~/.zshrc"
-alias zup="source ~/.zshrc"
-
-# vim
-alias vconf="vi ~/.vimrc"
-alias vup="source ~/.vimrc"
-
-# python
-alias pyenv="source ~/code/venv/bin/activate"
-
-# nvim
-alias nv="nvim"
-alias nconf="nvim ~/.config/nvim/init.lua"
-
-# ls
-alias ls="ls --color=auto"
-
-# tmux
-alias tconf="vi ~/.tmux.conf"
-alias tup="tmux source-file ~/.tmux.conf"
-
-# dot files
-alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-
-# games
-alias sol="~/code/solVItaire/sol"
-alias tetris="tetro-tui"
-
-# ladybird
-alias ladybird="cd ~/code/ladybird/ && ./Meta/ladybird.py run && cd -"
+source ~/.alias
 
 # ----- Custom path -----
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
