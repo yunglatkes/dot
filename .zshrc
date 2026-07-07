@@ -61,6 +61,8 @@ function zle-keymap-select {
 zle -N zle-keymap-select
 
 # ----- History -----
+# reference https://github.com/BreadOnPenguins/dots/blob/master/.config/zsh/.zshrc
+#
 setopt append_history inc_append_history share_history # better history
 HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space are not saved
 
@@ -68,7 +70,7 @@ HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space a
 # Select during cd completions
 zstyle ':completion:*' menu select
 
-# Colored man pages from ohmyzsh
+# Colored man pages
 # reference https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/colored-man-pages/colored-man-pages.plugin.zsh
 #
 # Requires colors autoload.
