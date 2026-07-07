@@ -9,13 +9,14 @@ fi
 source ~/.alias
 
 # ----- Custom path -----
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-export PATH="$PATH:$HOME/code/spek-cli/target/release"
 export PATH="$PATH:/opt/cmake/bin"
-export PATH="$PATH:$HOME/code/solVitaire"
 export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/code/jdk-25.0.3+9/bin"
+export PATH="$PATH:$HOME/code/jdk-24.0.3+9/bin"
 
+# nvim manual install (Debian)
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# node version manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
