@@ -35,6 +35,9 @@ alias tup="tmux source-file ~/.tmux.conf"
 # dot files
 alias dot="/usr/bin/git --git-dir=$HOME/.dot --work-tree=$HOME"
 
+# alias
+alias aconf="vi ~/.alias"
+
 # games
 alias sol="~/code/solVItaire/sol"
 alias tetris="tetro-tui"
