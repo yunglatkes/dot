@@ -35,10 +35,30 @@ zstyle ':vcs_info:*' stagedstr '%F{green}+%f'
 zstyle ':vcs_info:*' unstagedstr '%F{red}*%f'
 
 precmd() {
-    vcs_info
+    vcs_info ;
+    echo -ne '\e[6 q' # Use beam shape cursor for each new prompt.
 }
 
 PROMPT='%F{magenta}%B%~%b%f ${vcs_info_msg_0_}%B%(!.#.❯)%b '
+# reverse ❮
+
+# ref https://github.com/BrodieRobertson/dotfiles/blob/master/.zshrc
+#
+# Change cursor shape for different vi modes.
+echo -ne '\e[6 q' # Use beam shape cursor on startup.
+
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+    echo -ne '\e[2 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[6 q'
+  fi
+}
+zle -N zle-keymap-select
 
 # ----- History -----
 setopt append_history inc_append_history share_history # better history
