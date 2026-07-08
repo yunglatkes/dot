@@ -45,6 +45,10 @@ PROMPT='%F{magenta}%B%~%b%f ${vcs_info_msg_0_}%B%(!.#.❯)%b '
 
 # ref https://github.com/BrodieRobertson/dotfiles/blob/master/.zshrc
 #
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+#
 # Change cursor shape for different vi modes.
 echo -ne '\e[6 q' # Use beam shape cursor on startup.
 
