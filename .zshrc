@@ -77,6 +77,7 @@ zstyle ':completion:*' menu select
 
 # Colored man pages
 # reference https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/colored-man-pages/colored-man-pages.plugin.zsh
+autoload -U colors && colors
 #
 # Requires colors autoload.
 # See termcap(5).
