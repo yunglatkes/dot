@@ -1,0 +1,12 @@
+# Source - https://stackoverflow.com/a/48449104
+
+# Posted by jinscoe123, modified by community. See post 'Timeline' for change history
+
+# Retrieved 2026-07-24, License - CC BY-SA 4.0
+
+
+
+set show-mode-in-prompt on
+set vi-cmd-mode-string "\1\e[2 q\2"
+set vi-ins-mode-string "\1\e[6 q\2"
+

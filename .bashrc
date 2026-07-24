@@ -80,6 +80,16 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# Actvate keybinds for fzf
+if [ -f /usr/share/fzf/key-bindings.bash ]; then
+    . /usr/share/fzf/key-bindings.bash
+elif [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
+    . /usr/share/doc/fzf/examples/key-bindings.bash
+fi
+
+# Activate vi mode
+set -o vi
+
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -89,9 +99,11 @@ fi
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 source ~/.alias
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+# Consider deleting
+#
+# if [ -f ~/.bash_aliases ]; then
+#     . ~/.bash_aliases
+# fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -104,6 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Consider moving to .enviro
+#
+# Default programs
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
+
 # Color for man
 man() {
         LESS_TERMCAP_mb=$'\e[01;31m'
@@ -115,10 +133,6 @@ man() {
         LESS_TERMCAP_us=$'\e[4;93m' \
         command man "$@"
 }
-
-# Default programs
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
 
 # mkcd: make directory and cd into it
 mkcd() {
@@ -158,9 +172,3 @@ complete -F _docker_complete dcu dcd dcl
 # Custom path
 export PATH=$PATH:/home/$USER/.local/bin
 
-# Custom source
-if [ -f /usr/share/fzf/key-bindings.bash ]; then
-    . /usr/share/fzf/key-bindings.bash
-elif [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
-    . /usr/share/doc/fzf/examples/key-bindings.bash
-fi
