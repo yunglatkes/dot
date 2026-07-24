@@ -52,4 +52,4 @@ alias ddg="w3m duckduckgo.com"
 alias hconf="vi ~/Docker/homepage/config/services.yaml"
 alias dockup="~/Code/dockcheck.sh"
 alias lazydocker='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/Docker/lazydocker/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
-alias dps="~/src/dps.sh"
+alias dps="~/.script/dps.sh"
