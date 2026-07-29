@@ -2,6 +2,7 @@
 alias update="sudo apt update && sudo apt upgrade -y"
 
 # pacman (Arch) alias
+alias pac="sudo pacman"
 alias pet="sudo pacman -S"
 alias pup="sudo pacman -Syu"
 alias niconf="vi ~/.config/niri/config.kdl"
