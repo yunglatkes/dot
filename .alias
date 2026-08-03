@@ -5,18 +5,21 @@ alias update="sudo apt update && sudo apt upgrade -y"
 alias pac="sudo pacman"
 alias pet="sudo pacman -S"
 alias pup="sudo pacman -Syu"
-alias niconf="vi ~/.config/niri/config.kdl"
+
+# niri alias
+alias niconf="vim ~/.config/niri/config.kdl"
 
 # bash alias
-alias bconf="vi ~/.bashrc"
+alias bconf="vim ~/.bashrc"
 alias bup="source ~/.bashrc"
 
 # zsh
-alias zconf="vi ~/.zshrc"
+alias zconf="vim ~/.zshrc"
 alias zup="source ~/.zshrc"
 
 # vim
-alias vconf="vi ~/.vimrc"
+alias vi="vim"
+alias vconf="vim ~/.vimrc"
 alias vup="source ~/.vimrc"
 
 # python
@@ -30,14 +33,14 @@ alias nconf="nvim ~/.config/nvim/init.lua"
 alias ls="ls --color=auto"
 
 # tmux
-alias tconf="vi ~/.tmux.conf"
+alias tconf="vim ~/.tmux.conf"
 alias tup="tmux source-file ~/.tmux.conf"
 
 # dot files
 alias dot="/usr/bin/git --git-dir=$HOME/.dot --work-tree=$HOME"
 
 # alias
-alias aconf="vi ~/.alias"
+alias aconf="vim ~/.alias"
 
 # games
 alias sol="~/code/solVItaire/sol"
@@ -50,7 +53,7 @@ alias ladybird="cd ~/code/ladybird/ && ./Meta/ladybird.py run && cd -"
 alias ddg="w3m duckduckgo.com"
 
 # server alias
-alias hconf="vi ~/Docker/homepage/config/services.yaml"
+alias hconf="vim ~/Docker/homepage/config/services.yaml"
 alias dockup="~/.script/dockcheck.sh"
 alias lazydocker='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/Docker/lazydocker/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
 alias dps="~/.script/dps.sh"

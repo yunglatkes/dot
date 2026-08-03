@@ -1,15 +1,14 @@
 # Source - https://stackoverflow.com/questions/2499794/how-to-fix-a-locale-setting-warning-from-perl
 #
 # Setting for the new UTF-8 terminal support in Lion
-LC_CTYPE=ja_JP.UTF-8
-LC_ALL=ja_JP.UTF-8
+#LC_CTYPE=en_US.UTF-8
+#LC_ALL=en_US.UTF-8
 
 export PATH=$PATH:/home/$USER/.local/share/applications
 
 # ref https://github.com/BreadOnPenguins/dots/blob/master/.config/zsh/.zprofile
 #
 # follow XDG base dir specification
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CACHE_HOME="$HOME/.cache"
-
+#export XDG_CONFIG_HOME="$HOME/.config"
+#export XDG_DATA_HOME="$HOME/.local/share"
+#export XDG_CACHE_HOME="$HOME/.cache"
