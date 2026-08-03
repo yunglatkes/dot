@@ -42,6 +42,9 @@ alias dot="/usr/bin/git --git-dir=$HOME/.dot --work-tree=$HOME"
 # alias
 alias aconf="vim ~/.alias"
 
+# enviromental variables
+alias econf="vi ~/.enviro"
+
 # games
 alias sol="~/code/solVItaire/sol"
 alias tetris="tetro-tui"
