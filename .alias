@@ -29,6 +29,8 @@ alias econf="vi ~/.enviro"
 
 # Debian
 alias update="sudo apt update && sudo apt upgrade -y"
+alias aet="sudo apt install"
+
 
 # Arch
 alias pac="sudo pacman"
