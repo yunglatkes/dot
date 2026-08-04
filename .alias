@@ -1,15 +1,4 @@
-# Debian update
-alias update="sudo apt update && sudo apt upgrade -y"
-
-# pacman (Arch) alias
-alias pac="sudo pacman"
-alias pet="sudo pacman -S"
-alias pup="sudo pacman -Syu"
-
-# niri alias
-alias niconf="vim ~/.config/niri/config.kdl"
-
-# bash alias
+# bash
 alias bconf="vim ~/.bashrc"
 alias bup="source ~/.bashrc"
 
@@ -21,13 +10,6 @@ alias zup="source ~/.zshrc"
 alias vi="vim"
 alias vconf="vim ~/.vimrc"
 alias vup="source ~/.vimrc"
-
-# python
-alias pyenv="source ~/code/venv/bin/activate"
-
-# nvim
-alias nv="nvim"
-alias nconf="nvim ~/.config/nvim/init.lua"
 
 # ls
 alias ls="ls --color=auto"
@@ -45,6 +27,24 @@ alias aconf="vim ~/.alias"
 # enviromental variables
 alias econf="vi ~/.enviro"
 
+# Debian
+alias update="sudo apt update && sudo apt upgrade -y"
+
+# Arch
+alias pac="sudo pacman"
+alias pet="sudo pacman -S"
+alias pup="sudo pacman -Syu"
+
+# niri
+alias niconf="vim ~/.config/niri/config.kdl"
+
+# python
+alias pyenv="source ~/code/venv/bin/activate"
+
+# nvim
+alias nv="nvim"
+alias nconf="nvim ~/.config/nvim/init.lua"
+
 # games
 alias sol="~/code/solVItaire/sol"
 alias tetris="tetro-tui"
@@ -52,11 +52,11 @@ alias tetris="tetro-tui"
 # ladybird
 alias ladybird="cd ~/code/ladybird/ && ./Meta/ladybird.py run && cd -"
 
-# w3m alias
+# w3m
 alias ddg="w3m duckduckgo.com"
 
-# server alias
+# server
 alias hconf="vim ~/Docker/homepage/config/services.yaml"
-alias dockup="~/.script/dockcheck.sh"
-alias lazydocker='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/Docker/lazydocker/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
+alias dup="~/.script/dockcheck.sh"
 alias dps="~/.script/dps.sh"
+alias lazydocker='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/Docker/lazydocker/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
