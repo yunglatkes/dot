@@ -37,9 +37,6 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
-" Fix auto-indentation for YAML files
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
-
 " Use a line cursor within insert mode and a block cursor everywhere else.
 "
 " Reference chart of values:
@@ -52,7 +49,7 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentke
 "   Ps = 6  -> steady bar (xterm).
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
-
+"
 " Turn cursor into bar after exiting (delete?)
 "
 "autocmd VimLeave * silent !echo -ne "\e[6 q"
@@ -61,8 +58,15 @@ let &t_EI = "\e[2 q"
 "
 set autoindent expandtab tabstop=2 shiftwidth=2
 
+" Fix auto-indentation for YAML files
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
+
 " Colors
 "
 set termguicolors
 "
 colorscheme torte 
+
+" Save as sudo command map
+"
+cmap w!! w !sudo tee > /dev/null %
