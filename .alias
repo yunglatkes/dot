@@ -31,7 +31,6 @@ alias econf="vi ~/.env"
 alias update="sudo apt update && sudo apt upgrade -y"
 alias aet="sudo apt install"
 
-
 # Arch
 alias pac="sudo pacman"
 alias pet="sudo pacman -S"
