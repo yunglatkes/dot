@@ -25,7 +25,7 @@ alias dot="/usr/bin/git --git-dir=$HOME/.dot --work-tree=$HOME"
 alias aconf="vim ~/.alias"
 
 # enviromental variables
-alias econf="vi ~/.enviro"
+alias econf="vi ~/.env"
 
 # Debian
 alias update="sudo apt update && sudo apt upgrade -y"
