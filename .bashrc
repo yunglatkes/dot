@@ -93,17 +93,11 @@ set -o vi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+# Alias definitions
 source ~/.alias
 
-# Consider deleting
-#
-# if [ -f ~/.bash_aliases ]; then
-#     . ~/.bash_aliases
-# fi
+# Environmental variables
+source ~/.env
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -116,11 +110,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Consider moving to .enviro
-#
-# Default programs
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
 
 # Color for man
 man() {
@@ -172,3 +161,4 @@ complete -F _docker_complete dcu dcd dcl
 # Custom path
 export PATH=$PATH:/home/$USER/.local/bin
 
+. "$HOME/.cargo/env"
