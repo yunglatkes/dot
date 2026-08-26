@@ -160,5 +160,3 @@ complete -F _docker_complete dcu dcd dcl
 
 # Custom path
 export PATH=$PATH:/home/$USER/.local/bin
-
-. "$HOME/.cargo/env"
