@@ -135,7 +135,7 @@ _docker_cd() {
     echo "Usage: $caller <folder>"
     return 1
   fi
-  local target="$HOME/docker/$1"
+  local target="$HOME/Docker/$1"
   if [ ! -d "$target" ]; then
     echo "Error: '$target' does not exist"
     return 1
@@ -152,7 +152,7 @@ dcl() {
   _docker_cd "$1" "dcl" docker compose logs -f
 }
 _docker_complete() {
-  local base="$HOME/docker"
+  local base="$HOME/Docker"
   local cur="${COMP_WORDS[COMP_CWORD]}"
   mapfile -t COMPREPLY < <(cd "$base" 2>/dev/null && compgen -d -- "$cur")
 }

@@ -11,6 +11,12 @@ alias vi="vim"
 alias vconf="vim ~/.vimrc"
 alias vup="source ~/.vimrc"
 
+# alias
+alias aconf="vim ~/.alias"
+
+# enviromental variables
+alias econf="vi ~/.env"
+
 # ls
 alias ls="ls --color=auto"
 
@@ -21,15 +27,12 @@ alias tup="tmux source-file ~/.tmux.conf"
 # dot files
 alias dot="/usr/bin/git --git-dir=$HOME/.dot --work-tree=$HOME"
 
-# alias
-alias aconf="vim ~/.alias"
-
-# enviromental variables
-alias econf="vi ~/.env"
+# python
+alias pyenv="source ~/code/venv/bin/activate"
 
 # Debian
 alias update="sudo apt update && sudo apt upgrade -y"
-alias aet="sudo apt install"
+alias ate="sudo apt install"
 
 # Arch
 alias pac="sudo pacman"
@@ -38,9 +41,6 @@ alias pup="sudo pacman -Syu"
 
 # niri
 alias niconf="vim ~/.config/niri/config.kdl"
-
-# python
-alias pyenv="source ~/code/venv/bin/activate"
 
 # nvim
 alias nv="nvim"
@@ -55,6 +55,9 @@ alias ladybird="cd ~/code/ladybird/ && ./Meta/ladybird.py run && cd -"
 
 # w3m
 alias ddg="w3m duckduckgo.com"
+
+# Notes
+alias note="vi ~/Documents/Notes"
 
 # server
 alias hconf="vim ~/Docker/homepage/config/services.yaml"
