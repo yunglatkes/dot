@@ -53,6 +53,9 @@ alias tetris="tetro-tui"
 # ladybird
 alias ladybird="cd ~/code/ladybird/ && ./Meta/ladybird.py run && cd -"
 
+# ranger
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+
 # w3m
 alias ddg="w3m duckduckgo.com"
 
