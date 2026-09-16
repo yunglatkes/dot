@@ -54,9 +54,9 @@ let &t_EI = "\e[2 q"
 "
 "autocmd VimLeave * silent !echo -ne "\e[6 q"
 
-" Tab for two spaces
+" Tab for four spaces
 "
-set autoindent expandtab tabstop=2 shiftwidth=2
+set autoindent expandtab tabstop=8 shiftwidth=4 smarttab softtabstop=0
 
 " Fix auto-indentation for YAML files
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
@@ -65,7 +65,7 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentke
 "
 set termguicolors
 "
-colorscheme torte 
+" colorscheme torte 
 
 " Save as sudo command map
 "
