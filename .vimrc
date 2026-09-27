@@ -65,7 +65,7 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentke
 "
 set termguicolors
 "
-" colorscheme torte 
+colorscheme torte 
 
 " Save as sudo command map
 "
