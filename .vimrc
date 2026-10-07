@@ -62,7 +62,8 @@ set autoindent expandtab tabstop=8 shiftwidth=4 smarttab softtabstop=0
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:>
 
 " Send filename to tmux
-autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
+autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . split(expand("%"), "/")[-1])
+autocmd VimLeave * call system("tmux rename-window " . split($SHELL, "/")[-1])
 
 " Colors
 "
