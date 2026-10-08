@@ -24,6 +24,10 @@ alias ls="ls --color=auto"
 alias tconf="vim ~/.tmux.conf"
 alias tup="tmux source-file ~/.tmux.conf"
 
+# nvim
+alias nv="nvim"
+alias nconf="nvim ~/.config/nvim/init.lua"
+
 # dot files
 alias dot="/usr/bin/git --git-dir=$HOME/.dot --work-tree=$HOME"
 
@@ -42,16 +46,12 @@ alias pup="sudo pacman -Syu"
 # niri
 alias niconf="vim ~/.config/niri/config.kdl"
 
-# nvim
-alias nv="nvim"
-alias nconf="nvim ~/.config/nvim/init.lua"
-
 # games
-alias sol="~/code/solVItaire/sol"
+alias solitare="~/source/solVItaire/sol"
 alias tetris="tetro-tui"
 
 # ladybird
-alias ladybird="cd ~/code/ladybird/ && ./Meta/ladybird.py run && cd -"
+alias ladybird="cd ~/source/ladybird/ && ./Meta/ladybird.py run && cd -"
 
 # ranger
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
@@ -60,10 +60,8 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 alias ddg="w3m duckduckgo.com"
 
 # Notes
-alias note="vi ~/Documents/Notes"
+alias notes="vi ~/docs/notes"
 
-# server
-alias hconf="vim ~/Docker/homepage/config/services.yaml"
+# docker
 alias dup="~/.script/dockcheck.sh"
 alias dps="~/.script/dps.sh"
-alias lazydocker='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/Docker/lazydocker/config:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
