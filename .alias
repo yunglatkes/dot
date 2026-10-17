@@ -34,6 +34,9 @@ alias dot="/usr/bin/git --git-dir=$HOME/.dot --work-tree=$HOME"
 # python
 alias pyenv="source ~/code/venv/bin/activate"
 
+# fetch
+alias fetch="cat /etc/os-release"
+
 # Debian
 alias update="sudo apt update && sudo apt upgrade -y"
 alias ate="sudo apt install"
