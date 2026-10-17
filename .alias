@@ -47,7 +47,11 @@ alias pet="sudo pacman -S"
 alias pup="sudo pacman -Syu"
 
 # niri
-alias niconf="vim ~/.config/niri/config.kdl"
+alias ns="niri-session"
+alias niconf="nvim ~/.config/niri/config.kdl"
+
+# noctalia
+alias noconf="nvim ~/.config/noctalia/settings.toml"
 
 # games
 alias solitare="~/source/solVItaire/sol"

@@ -148,3 +148,7 @@ function y() {
 	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd" || builtin true
 	command rm -f -- "$tmp"
 }
+
+mkcd() {
+    mkdir -p "$@" && cd "$1"
+}
